@@ -29,6 +29,7 @@ outputs = ["Reveal"]
 ---
 
 * Fewer keywords, e.g. only one loop, `for`
+* A `func` can return 0 - n values, common a value and an err
 * Every var must be used (expect blank `_`)
 * Variables are only available in the scope in which they were declared
 * C on steroides
