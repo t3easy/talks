@@ -10,6 +10,10 @@
 </span></span><span style=display:flex><span>go test ./...
 </span></span><span style=display:flex><span><span style=color:#75715e># compile packages and dependencies</span>
 </span></span><span style=display:flex><span>go build
+</span></span><span style=display:flex><span><span style=color:#75715e># update dependencies</span>
+</span></span><span style=display:flex><span>go get -u ./...
+</span></span><span style=display:flex><span><span style=color:#75715e># update with test dependencies</span>
+</span></span><span style=display:flex><span>go get -t -u ./...
 </span></span></code></pre></div><p><a href=https://pkg.go.dev/cmd/go>https://pkg.go.dev/cmd/go</a></p></section><section><h2 id=packages>Packages</h2><p>Every Go program is made up of packages.<br>Programs start running in package <code>main</code>.<br>Standard lib, internal and external packages must be imported.</p></section><section><h2 id=go-module>Go module</h2><p>Every module has a name, preferable the repo url</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>go mod init github.com/t3easy/hello-go
 </span></span></code></pre></div><ul><li><code>go.mod</code> - Module name, Go version and dependencies<br>like <code>composer.json</code></li><li><code>go.sum</code> - Checksum of direct and indirect dependencies<br>like <code>composer.lock</code></li></ul><small>As of Go 1.13, the go command by default downloads and authenticates modules
 using the Go module mirror and Go checksum database run by Google.</small></section><section><section data-shortcode-section><h2 id=setup-dev-system>Setup dev system</h2><h3 id=install-go>Install Go</h3><ul><li>As package<br><a href=https://go.dev/dl/>https://go.dev/dl/</a></li><li>With Homebrew<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=nohighlight data-noescape><span style=display:flex><span>brew install go
@@ -20,4 +24,6 @@ using the Go module mirror and Go checksum database run by Google.</small></sect
 <script type=text/javascript src=/talks/reveal-js/plugin/markdown/markdown.js></script>
 <script type=text/javascript src=/talks/reveal-js/plugin/highlight/highlight.js></script>
 <script type=text/javascript src=/talks/reveal-js/plugin/zoom-js/zoom.js></script>
-<script type=text/javascript src=/talks/reveal-js/plugin/notes/notes.js></script></body></html>
+<script type=text/javascript src=/talks/reveal-js/plugin/notes/notes.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!1});let render=e=>{let t=e.currentSlide.querySelectorAll(".mermaid");if(!t.length)return;t.forEach(e=>{let t=e.getAttribute("data-processed");t||mermaid.init(void 0,e)})};Reveal.addEventListener("slidechanged",render),Reveal.addEventListener("ready",render)</script></body></html>
