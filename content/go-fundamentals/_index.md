@@ -79,6 +79,10 @@ go get github.com/spf13/cobra@latest
 go test ./...
 # compile packages and dependencies
 go build
+# update dependencies
+go get -u ./...
+# update with test dependencies
+go get -t -u ./...
 ```
 
 https://pkg.go.dev/cmd/go
