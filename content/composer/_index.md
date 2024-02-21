@@ -43,7 +43,7 @@ outputs = ["Reveal"]
 * [canonical](https://getcomposer.org/doc/articles/repository-priorities.md#making-repositories-non-canonical)  
   Should a package be searched in another repository, if it was found in the current one?
 * [options.reference](https://getcomposer.org/doc/05-repositories.md#path)  
-  For path repositories, how should the lock file reference to the pachage
+  For path repositories, how should the lock file reference packages
 * `options.ssl.cafile`, trust a ca certificate during the communication with the https repository
 
 ---
