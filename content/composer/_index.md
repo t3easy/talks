@@ -31,7 +31,7 @@ outputs = ["Reveal"]
 
 ## Composer repositories
 
-* [Packagist.org](https://packagist.org/), main Composer repository, can be [disabled](https://getcomposer.org/doc/05-repositories.md#disabling-packagist-org)  
+* [Packagist.org](https://packagist.org/), main Composer repository, can be [disabled](https://getcomposer.org/doc/05-repositories.md#disabling-packagist-org)
 * [GitLab](https://docs.gitlab.com/ee/user/packages/composer_repository/)
 * [Magento](https://repo.magento.com/), Marketplace to get commercial plugins or Magento versions
 * [TYPO3 ELTS](https://elts.typo3.com/), ELTS TYPO3 versions with paid subscription
@@ -43,7 +43,7 @@ outputs = ["Reveal"]
 
 ## VCS repositories
 
-* Every Git/Subversion/Mercurial/Fossil repository can become a composer package  
+* Every Git/Subversion/Mercurial/Fossil repository can become a composer package
 * Special VCS driver for Bitbucket, GitHub, GitLab (VCS, not composer repo) to use dist packages instead of the VCS repo itselve if possible
 
 ---
