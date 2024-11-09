@@ -16,15 +16,42 @@ outputs = ["Reveal"]
 
 ---
 
+{{% section %}}
+
 ## Common commands
 
 * `composer init`
 * `composer create-project vendor/package:version`
 * `composer install --no-dev -a` (--classmap-authoritative)
-* `composer require vendor/package:version` / `--dev` / `:@dev`, `:^1.0`, `~1.1.0`
+
+---
+
+## Require / remove
+
+* `composer require vendor/package:version`
+* `composer require --dev vendor/package:version`
+
+Example version constraints `@dev`, `^1.0`, `~1.1.0`
+
 * `composer remove vendor/package`
-* `composer update --dry-run` / `--lock`
+
+---
+
+## Update
+
+* `composer update --dry-run`
+* `composer update --lock`
+* `composer update "vendor/package"`
+* `composer update "vendor/*" --with-dependencies`
+* `composer update "vendor/prefix-*" --with-all-dependencies`
+
+---
+
+## Show outdated packages
+
 * `composer outdated -D -m --strict --locked`
+
+{{% /section %}}
 
 ---
 
@@ -33,8 +60,8 @@ outputs = ["Reveal"]
 * `--dev` Require a dev package
 * `--dry-run` Just show what composer would do
 * `--ignore-platform-reqs` Ignores platform dependencies as PHP Version and extensions
-* `--with-dependencies`
-* `--with-all-dependencies`
+* `--with-dependencies` Update also dependencies of packages in the argument list, except those which are root requirements.
+* `--with-all-dependencies` Update also dependencies of packages in the argument list, including those which are root requirements.
 
 ---
 
