@@ -18,9 +18,7 @@ outputs = ["Reveal"]
 
 ## Common commands
 
-* `composer require vendor/package:version`
-* `composer require vendor/package:@dev`
-* `composer require --dev vendor/package:version`
+* `composer require vendor/package:version` / `--dev` / `:@dev`, `:^1.0`, `~1.1.0`
 * `composer install --no-dev -a` (--classmap-authoritative)
 * `composer init`
 * `composer update --dry-run`
@@ -124,7 +122,7 @@ The composer.lock *pins* the current install packages, their version and all dep
 
 * https://getcomposer.org/
 * https://packagist.org/
-* https://npmtrends.com/vite-vs-webpack
+* https://semver.madewithlove.com/
 
 ---
 
