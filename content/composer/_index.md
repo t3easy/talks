@@ -16,6 +16,54 @@ outputs = ["Reveal"]
 
 ---
 
+## Common commands
+
+* `composer require vendor/package:version`
+* `composer require vendor/package:@dev`
+* `composer require --dev vendor/package:version`
+* `composer install --no-dev -a` (--classmap-authoritative)
+* `composer init`
+* `composer update --dry-run`
+* `composer create-project vendor/package:version`
+* `composer remove vendor/package`
+* `composer update --lock`
+* `composer outdated -D -m --strict --locked`
+
+---
+
+## Common Parameters
+
+* `--dev` Require a dev package
+* `--dry-run` Just show what composer would do
+* `--ignore-platform-reqs` Ignores platform dependencies as PHP Version and extensions
+* `--with-dependencies`
+* `--with-all-dependencies`
+
+---
+
+## Further commands
+
+* `composer why`
+* `composer fund`
+* `composer config minimum-stability dev`
+* `composer config prefer-stable true`
+* `composer show`
+* `composer config gitlab-domains gitlab.my.org`
+* `composer config repositories.local '{"type": "path", "url": "packages/*", "options": {"reference": "none"}}'`
+* `composer bump`
+
+---
+
+## The composer.json and composer.lock
+
+What *should* work vs. what is currently installed.
+
+The composer.json defines the packages you want to install and their version range that should work.
+
+The composer.lock *pins* the current install packages, their version and all dependencies of the packages with their version (dependency tree).
+
+---
+
 {{% section %}}
 
 ## Repository types
@@ -35,16 +83,16 @@ outputs = ["Reveal"]
 * [GitLab](https://docs.gitlab.com/ee/user/packages/composer_repository/)
 * [Magento](https://repo.magento.com/), Marketplace to get commercial plugins or Magento versions
 * [TYPO3 ELTS](https://elts.typo3.com/), ELTS TYPO3 versions with paid subscription
-* [TYPO3 TER](https://composer.typo3.org/), depecated
+* [TYPO3 TER](https://composer.typo3.org/), deprecated
 * [Private Packagist](https://packagist.com/), commercial service from the company behind Composer
-* Satis
+* [Satis](https://composer.github.io/satis/)
 
 ---
 
 ## VCS repositories
 
 * Every Git/Subversion/Mercurial/Fossil repository can become a composer package
-* Special VCS driver for Bitbucket, GitHub, GitLab (VCS, not composer repo) to use dist packages instead of the VCS repo itselve if possible
+* Special VCS driver for Bitbucket, GitHub, GitLab (VCS, not composer repo) to use dist packages instead of the VCS repo itself if possible
 
 ---
 
