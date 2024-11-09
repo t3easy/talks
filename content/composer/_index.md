@@ -18,13 +18,12 @@ outputs = ["Reveal"]
 
 ## Common commands
 
-* `composer require vendor/package:version` / `--dev` / `:@dev`, `:^1.0`, `~1.1.0`
-* `composer install --no-dev -a` (--classmap-authoritative)
 * `composer init`
-* `composer update --dry-run`
 * `composer create-project vendor/package:version`
+* `composer install --no-dev -a` (--classmap-authoritative)
+* `composer require vendor/package:version` / `--dev` / `:@dev`, `:^1.0`, `~1.1.0`
 * `composer remove vendor/package`
-* `composer update --lock`
+* `composer update --dry-run` / `--lock`
 * `composer outdated -D -m --strict --locked`
 
 ---
