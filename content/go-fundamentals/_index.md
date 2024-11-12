@@ -47,7 +47,7 @@ outputs = ["Reveal"]
 * [GitHub CLI](https://cli.github.com/)
 
 {{% fragment %}}
-<sup>1</sup> This presentation is build with [Hugo](https://gohugo.io/) and the [reveal.js](https://revealjs.com/) theme [reveal-hugo](https://github.com/dzello/reveal-hugo)
+<sup>1</sup> This presentation is build with [Hugo](https://gohugo.io/) and the [reveal.js](https://revealjs.com/) theme [reveal-hugo](https://github.com/joshed-io/reveal-hugo)
 {{% /fragment %}}
 
 ---
