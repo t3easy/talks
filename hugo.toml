@@ -2,7 +2,7 @@ baseURL = 'https://t3easy.github.io/talks'
 languageCode = 'en-us'
 title = 't3easy talks'
 
-theme = "reveal-hugo"
+theme = ["github.com/joshed-io/reveal-hugo"]
 
 [markup.goldmark.renderer]
 unsafe = true
